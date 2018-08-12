@@ -7,7 +7,9 @@
     "dev": "next",
     "test": "NODE_ENV=test jest",
     "ci": "start-server-and-test dev http://localhost:3000 test",
-    "cypress": "cypress run",
+    "ci-cypress": "start-server-and-test dev http://localhost:3000 cy:run",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
     "build": "next build",
     "start": "next start"
   },

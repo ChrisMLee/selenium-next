@@ -1,5 +1,6 @@
 describe("My First Test", function() {
   it("Visits the Kitchen Sink", function() {
-    cy.visit("https://example.cypress.io");
+    cy.visit("http://localhost:3000");
+    cy.contains("Hello World!");
   });
 });
